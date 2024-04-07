@@ -6,11 +6,25 @@
 <title>Palindroma e Pari o Dispari</title>
 </head>
 <body>
+    <!-- CONTROLLO PAROLA PALINDROMA -->
     <h2>Verifica se una parola è palindroma</h2>
     <input type="text" id="wordInput" placeholder="Inserisci una parola">
     <button onclick="checkPalindrome()">Verifica</button>
     <p id="palindromeResult"></p>
 
+    <!-- GIOCO PARI O DISPARI -->
+    <h2>Pari o Dispari</h2>
+    <label>Scegli pari o dispari:</label>
+    <select id="choice">
+        <option value="pari">Pari</option>
+        <option value="dispari">Dispari</option>
+    </select><br>
+    <label>Inserisci un numero da 1 a 5:</label>
+    <input type="number" id="numberInput" min="1" max="5">
+    <button onclick="playGame()">Gioca</button>
+    <p id="gameResult"></p>
+
+    <!-- "LINKS" PER I JS -->
     <script src="./js/functions.js"></script>
     <script src="./js/script.js"></script>
 </body>
